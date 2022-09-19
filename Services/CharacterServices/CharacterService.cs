@@ -10,7 +10,10 @@ namespace dotnet_rpg.Services.CharacterServices
         private static List<Character> characters = new List<Character>
         {
         new Character(),
-        new Character { Id = 1, Name = "Sam"}
+        new Character { Id = 4, Name = "Sam"},
+        new Character { Id = 5, Name = "Jhon"},
+        new Character { Id = 6, Name = "David"},
+        new Character { Id = 7, Name = "Barbors"}
         };
         public List<Character> AddCharacter(Character newCharacter)
         {
