@@ -1,4 +1,5 @@
-﻿using dotnet_rpg.Models;
+﻿using dotnet_rpg.Dtos.Character;
+using dotnet_rpg.Models;
 using dotnet_rpg.Services.CharacterServices;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -31,8 +32,8 @@ namespace dotnet_rpg.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddCharacter(Character newCharacter)
-        {
+        public async Task<IActionResult> AddCharacter(AddCharacterDto newCharacter)
+         {
             return Ok(await _characterService.AddCharacter(newCharacter));
         }
 
